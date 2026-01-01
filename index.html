@@ -7,33 +7,108 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">theDeveloper</div>
+        <ul class="nav-menu">
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li><a href="#academic" class="nav-link">Education</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#achievements" class="nav-link">Achievements</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+        </ul>
+        <button id="theme-toggle" class="theme-toggle">
+          <svg
+            class="sun-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg
+            class="moon-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </div>
+    </nav>
+
     <header>
       <div class="container">
         <h1>Pratham Khanna</h1>
-        <p>Associate AI Engineer | Computer Science and Engineering Student</p>
-        <button id="theme-toggle" class="theme-toggle">
-          Toggle Dark/Light Mode
-        </button>
+        <p class="subtitle">Associate Software Engineer (AI Development)</p>
+        <p class="subtitle-secondary">
+          Computer Science and Engineering Student
+        </p>
       </div>
     </header>
 
     <main class="container">
       <section id="contact">
         <h2>Contact Information</h2>
-        <ul>
-          <li><strong>Contact No:</strong> (+91) 89249 22903</li>
-          <li><strong>Email ID:</strong> prathamkhanna.er2@gmail.com</li>
-          <li>
-            <strong>GitHub Link:</strong> <a href="https://github.com/the-developer-306" target="_blank">GitHub</a>
-          </li>
-          <li>
-            <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/pratham-khanna-609776257/" target="_blank">LinkedIn</a>
-          </li>
-          <li>
-            <strong>Portfolio Link:</strong>
-            <a href="https://the-developer-306.github.io/Portfolio-PrathamKhanna/" target="_blank">Portfolio</a>
-          </li>
-        </ul>
+        <div class="contact-grid">
+          <div class="contact-item">
+            <span class="contact-label">Phone</span>
+            <span class="contact-value">(+91) 89249 22903</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">Email</span>
+            <span class="contact-value">prathamkhanna.er2@gmail.com</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">GitHub</span>
+            <a
+              href="https://github.com/the-developer-306"
+              target="_blank"
+              class="contact-link"
+              >the-developer-306</a
+            >
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">LinkedIn</span>
+            <a
+              href="https://www.linkedin.com/in/pratham-khanna-609776257/"
+              target="_blank"
+              class="contact-link"
+              >pratham-khanna</a
+            >
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">Portfolio</span>
+            <a
+              href="https://the-developer-306.github.io/Portfolio-PrathamKhanna/"
+              target="_blank"
+              class="contact-link"
+              >View Portfolio</a
+            >
+          </div>
+        </div>
       </section>
 
       <section id="academic">
@@ -57,7 +132,7 @@
       <section id="experience">
         <h2>Internship/Experience</h2>
         <div class="job">
-          <h3>Associate AI Engineer, MetaUpSpace LLP</h3>
+          <h3>Associate Software Engineer (AI Development), MetaUpSpace LLP</h3>
           <p>September 2025 – Ongoing</p>
           <p>
             <strong>ConvoSynth.AI (Multi-Agent Presentation Generator):</strong>
@@ -93,9 +168,9 @@
           </p>
           <ul>
             <li>
-              Project Link: <a href="#" target="_blank">(Repository Link)</a>
-              <a href="#" target="_blank">(Deployed Link)</a>
-              <a href="#" target="_blank">(Live Demo Link)</a>
+              Project Link: <a href="https://github.com/the-developer-306/RogiMitra.AI-Automated_Medical_Diagnosis_and_Prescription_System" target="_blank">(Repository Link)</a>
+              <a href="https://rogimitra-ai.streamlit.app/" target="_blank">(Deployed Link)</a>
+              <a href="https://www.youtube.com/watch?v=dVXdZDnuEzs" target="_blank">(Live Demo Link)</a>
             </li>
             <li>
               An end-to-end, Agentic-AI powered medical web app enabling users
@@ -161,8 +236,8 @@
           <h3>Comp-Intell (Agentic AI Competitor Intelligence Team)</h3>
           <ul>
             <li>
-              Project Link: <a href="#" target="_blank">(Repository Link)</a>
-              <a href="#" target="_blank">(Deployed Link)</a>
+              Project Link: <a href="https://github.com/the-developer-306/Comp_Intell-AI-Competitor-Intelligence-System" target="_blank">(Repository Link)</a>
+              <a href="https://compintell-ai.streamlit.app/" target="_blank">(Deployed Link)</a>
             </li>
             <li>
               Built an AI-powered system to help businesses analyze up to 5
@@ -203,19 +278,19 @@
           <li>
             NPTEL Introduction to Machine Learning course (2025) top 1% topper
             among 13644 candidates.
-            <a href="#" target="_blank">(View Credential)</a>
+            <a href="https://drive.google.com/file/d/1aws8vhCDIeZeBpznGK9SsiHb-4O8syur/view" target="_blank">(View Credential)</a>
           </li>
           <li>
             Smart India Hackathon 2023.
-            <a href="#" target="_blank">(View Credential)</a>
+            <a href="https://drive.google.com/file/d/11DRUbrRhOWnXmo0oy7uk5ezqeuscfT9b/view" target="_blank">(View Credential)</a>
           </li>
           <li>
             Solved 150+ D.S.A. problems on Geeks for Geeks.
-            <a href="#" target="_blank">(View Profile)</a>
+            <a href="https://www.geeksforgeeks.org/profile/whilealivecggke" target="_blank">(View Profile)</a>
           </li>
           <li>
             5-star (Java) coding badge at Hacker Rank.
-            <a href="#" target="_blank">(View Profile)</a>
+            <a href="https://www.hackerrank.com/profile/whilealivecode11" target="_blank">(View Profile)</a>
           </li>
         </ul>
       </section>

@@ -6,9 +6,6 @@ const body = document.body;
 const currentTheme = localStorage.getItem("theme") || "light";
 if (currentTheme === "dark") {
   body.classList.add("dark-mode");
-  themeToggle.textContent = "Switch to Light Mode";
-} else {
-  themeToggle.textContent = "Switch to Dark Mode";
 }
 
 // Toggle theme on button click
@@ -16,6 +13,19 @@ themeToggle.addEventListener("click", () => {
   body.classList.toggle("dark-mode");
   const theme = body.classList.contains("dark-mode") ? "dark" : "light";
   localStorage.setItem("theme", theme);
-  themeToggle.textContent =
-    theme === "dark" ? "Switch to Light Mode" : "Switch to Dark Mode";
+});
+
+// Smooth scrolling for navigation links
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute("href"));
+    if (target) {
+      const offsetTop = target.offsetTop - 80;
+      window.scrollTo({
+        top: offsetTop,
+        behavior: "smooth",
+      });
+    }
+  });
 });
